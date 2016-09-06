@@ -1,0 +1,47 @@
+body,h1,p,input,h4,h3{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body {
+    font-size: 12px;
+    font-family: "Microsoft YaHei",Tahoma,Verdana,Arial,sans-serif,"宋体";
+}
+div,img{
+	display: block;
+}
+.fr{
+	float: right;
+	display: inline;
+}
+.fl{
+	float: left;
+	display: inline;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: auto;
+}
+.clearfiex:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfiex {
+    display: inline-block; 
+    zoom: 1;
+}
+#margin, #margin0 {
+    margin-right: 0;
+}
+strong{
+	font-weight: normal;
+	font-style: normal;
+}

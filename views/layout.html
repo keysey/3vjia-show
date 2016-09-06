@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>三维家</title>
+		<link rel="stylesheet" href="../public/css/layout.css" />
+		<link rel="stylesheet" href="../public/css/reset.css" />
+	   	<link rel="stylesheet" href="../public/css/index.css" />	   	
+	   	<script src="../public/js/jquery.js"></script>
+	   	<script src="../public/js/data.js"></script>
+	   	<script src="../public/js/jquery.fadeImg.js"></script>
+	   	<script src="../public/js/jquery.fadeImg.end.js"></script>
+	   	<script src="../public/js/jquery.for.fade.js"></script>
+	   	<script src="../public/js/layout.js"></script>
+	   	<script src="../public/js/index.js"></script>
+	</head>
+	<body>
+		<nav class="navbar">
+		    <div class="mainBav">
+		        <div class="navbar-header">
+		        	<ul class="navbar-right fr">
+		                <li{%if route_path == '/register'%} class="active"{%endif%}><a href="/register">注册</a></li>
+		                <li class="active"{%if route_path == '/login'%} class="active"{%endif%}><a href="/login">登录</a></li>
+		            </ul>
+		        	<h1 class="logo fl">
+		        		<a href="/">
+		        			<img src="image/logo.png" alt="装修设计软件_三维家"/>
+		        		</a>
+		        	</h1>
+		        	<ul class="minnav clearfiex">
+		        		<li class="active" {%if route_path == '/'%}{%endif%}><a href="/">首页</a></li>
+		                <li class="navFind" {%if route_path == '/design'%}{%endif%}>
+		                	<a href="/design">设计神器
+		                		<i class="index_drop dropIcon"></i>
+		                	</a>
+		                	<div class="navFindList toolList">
+	                            <a href="/Design/I3D"><i class="TY index_drop"></i>3D通用</a>
+	                            <a href="/Design/Cabinet"><i class="CG index_drop"></i>橱柜</a>
+	                            <a href="/Design/Wardrobe"><i class="YG index_drop"></i>衣柜</a>
+	                            <a href="/Design/Ceiling"><i class="DD index_drop"></i>吊顶</a>
+	                            <a href="/Design/BrickPaving"><i class="PZ index_drop"></i>铺砖</a>
+	                        </div>
+		                </li>
+		                
+		                <li{%if route_path == '/VR'%}{%endif%}><a href="/VR">VR全景</a></li>
+		                <li{%if route_path == '/study'%}{%endif%}><a href="/study">培训与学习</a></li>
+		                <li class="navFind"{%if route_path == '/find'%}{%endif%}>
+		                	<a href="/find">发现
+		                		<i class="index_drop dropIcon"></i>
+		                	</a>
+	                        <div class="navFindList">
+	                            <a href="/find/index">行业资讯</a>
+	                            <a href="/find/Scheme">方案</a>
+	                            <a href="/find/building">找我家</a>
+	                            <a href="/find/Decorate">找装修</a>
+	                            <a href="/find/Store">找店铺</a>
+	                        </div>
+		                </li>
+		                <li{%if route_path == '/about'%} class="active"{%endif%}><a href="/about">关于我们</a></li>
+		        	</ul>
+		        </div>
+		    </div>
+		</nav>
+		<div class="container">
+		    {%block content%}{%endblock%}
+		</div>
+	</body>
+</html>

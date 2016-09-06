@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+		<script>
+//			var a = new Object();
+//			a.value = 1;
+//			b = a;
+//			b.value = 2;
+//			alert(a.value)  //2
+			
+			
+//			function fn(...rest){
+//				var result = 0;
+//				for (var i of rest) {
+//					result += i;
+//				}
+//				return result;
+//			}
+//			console.log(fn(10,20,30));  //60
+			
+			//ES6 新标准 rest参数，如果传入参数多于设置的形参个数，则后面的默认成为rest的数组内容
+			function fn(a,b,...rest){
+				console.log('a='+a);
+				console.log('b='+b);
+				console.log(rest);
+			}
+			fn(10,20,30,40,50);  //a=10,b=20,rest=[30,40,50]
+			
+			/*计算圆面积。如果pi存在直接计算，如果不存在，默认为3.14*/
+//			function area_of_circle(r,pi){
+//				pi = typeof(pi)!=='undefined'?pi:3.14;
+//				return(pi*r*r)				
+//			}
+//			console.log(area_of_circle(10,3)); //300
+//			console.log(area_of_circle(10)); //314
+			
+			/**陷阱1：return**/
+//			function max(a,b){
+//				if (a>b) {
+//					return
+//							a;
+//				}else{
+//					return
+//							b;
+//				}
+//			}
+//			console.log(max(10,22)); // 解析：返回underfind，因为return后面空格后没有内容，默认为 return; 自动添加了分号，相当于return undefined;
+			
+			/*更改为:*/			
+			function max(a,b){
+				if (a>b) {
+					return a;
+				}else{
+					return b;
+				}
+			}
+			console.log(max(10,22));  //22
+		
+			//变量提升
+			function foo() {
+			    var x = 'Hello, ' + y;
+			    alert(x);
+			    var y = 'Bob';
+			}
+			console.log(foo()); //Hello, underfind
+			
+			//变量指向
+			var a = 'Name';
+			var b = a;
+			a = 'changed';
+			console.log(b);  //name
+		</script>
+	</body>
+</html>

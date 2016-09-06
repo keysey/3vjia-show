@@ -1,0 +1,116 @@
+/*nav导航样式*/
+.mainBav {
+    position: relative;
+    width: 100%;
+    min-width: 1220px;
+    z-index: 800;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 2.5px 4.33px 10px 0px #bbb;
+}
+.navbar-header{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei";
+}
+.navbar-header .clearfiex li{
+	position: relative;
+    height: 80px;
+    line-height: 80px;
+    float: left;
+    padding: 0 20px;
+    font-size: 16px;
+    color: rgb( 102, 102, 102 );
+}
+.navbar-header .clearfiex li:hover, .navbar-header .clearfiex li.active {
+    background-color: #1890ff;
+}
+.navbar-right{
+	margin-top: 18px;
+}
+.navbar-right li{
+    display: inline-block;
+    width: 118px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 18px;
+    border: 1px solid #1890ff;
+}
+.navbar-right li.active, .navbar-right li:hover {
+    background-color: #1890ff;
+    color: #fff;
+}
+.logo {
+    padding-top: 9px;
+    margin-right: 40px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+.navbar-header .clearfiex li.navFind i.dropIcon {
+    display: inline-block;
+    width: 8px;
+    height: 6px;
+    overflow: hidden;
+    margin-left: 6px;
+    background-position: -176px -6px;
+    vertical-align: middle;
+}
+.index_drop {
+	background: url(../../image/index_drop.png) no-repeat;
+}
+.navbar-header .clearfiex li .navFindList {
+    display: none;
+    position: absolute;
+    left: -30px;
+    top: 79px;
+    width: 154px;
+    background-color: #1890ff;
+}
+li.navFind .active i .dropIcon,.navbar-header .clearfiex li.navFind:hover i.dropIcon{
+	background-position: -176px -24px;
+}
+.navbar-header .clearfiex li .toolList {
+    width: 224px;
+    left: -39px;
+}
+.navbar-header .clearfiex li .navFindList a {
+    position: relative;
+    font-weight: normal;
+    display: block;
+    text-align: center;
+    height: 54px;
+    line-height: 54px;
+    color: #fff;
+    border-bottom: 1px dashed #3fa2ff;
+}
+.navbar-header .clearfiex li .toolList a {
+    text-align: left;
+}
+.navbar-header .clearfiex li .toolList a i {
+    display: inline-block;
+    width: 30px;
+    height: 35px;
+    vertical-align: middle;
+    margin: 0 27px 0 44px;
+}
+.navbar-header .clearfiex li .toolList a i.TY {
+    background-position: -1px -1px;
+}
+.navbar-header .clearfiex li .toolList a i.CG {
+    background-position: -35px -1px;
+}
+.navbar-header .clearfiex li .toolList a i.YG {
+    background-position: -71px -1px;
+}
+.navbar-header .clearfiex li .toolList a i.DD {
+    background-position: -105px 0;
+}
+.navbar-header .clearfiex li .toolList a i.PZ {
+    background-position: -140px -1px;
+}
